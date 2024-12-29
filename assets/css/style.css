@@ -2,6 +2,7 @@
 .wrapper {
     width: 960px;
     margin: 0 auto;
+
     
 }
 .wrapper h2 {
@@ -11,11 +12,20 @@
 
 
 /*header-style*/
+
 header {
-    background-image: url('../imgs/headbar.gif');
+    background-image: url(../imgs/headbar.gif);
     background-size: cover;
     height: 60px;
     font-size: 16px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    }
+header > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 header a {
     text-decoration: none;
@@ -34,7 +44,7 @@ header button {
 /*BEACH-SECTION*/
 
 .beach-section img {
-width: 100vw;
+width: 100%;
 height: 650px;
 object-fit: cover;
 }
@@ -45,17 +55,24 @@ object-fit: cover;
 .worldwide-defaut {
     margin-bottom: 20px;
     box-shadow: 0 0 5px #bbb;
+display: flex;
 }
+
 .worldwide-defaut div {
-    padding: 10px;
-    /* background-color: lightblue; */
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding: 10px;
 }
+
 .worldwide-defaut button {
 background-color: #f60;
 color: white;
 border: none;
 padding: 8px 30px;
 border-radius: 2px;
+align-self: self-end;
 }
 .worldwide-defaut p {
     font-size: 13px;
@@ -63,7 +80,7 @@ border-radius: 2px;
 }
 /*WORLDWIDE*/
 .worldwide img {
-    width: 100%;
+    width: 640px;
     height: 250px;
     object-fit: cover;
     object-position: right top;
@@ -73,12 +90,29 @@ border-radius: 2px;
 
 /*BRETAGNE*/
 .bretagne img {
-    width: 100%;
-    height: 305px;
+    width: 640px;
+    height: 250px;
     object-fit: cover;
     object-position: right top;
     display: block;
 }
+
+/* TRIPLE IMAGE */
+
+.triple-imgs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.triple-imgs img {
+    display: block;
+    border-radius: 5px;
+    height: 220px;
+    width: 285px;
+    object-fit: cover;
+    box-shadow: 0 0  5px #bbb;
+}
+
 /* FOOTER */
 footer {
     background-color: #f2f2f2;
