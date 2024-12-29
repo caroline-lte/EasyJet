@@ -13,6 +13,9 @@
 
 .checkbox {
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .checkbox input {
@@ -59,8 +62,12 @@
 
 /* -------- */
 
-.quantity div {
+.quantity > div {
     padding: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .quantity button {
@@ -69,7 +76,7 @@
     font-size: 20px;
 }
 
-.quantity > div > span {
+.quantity > div  span {
     font-weight: bold;
     font-size: 20px;
 }
