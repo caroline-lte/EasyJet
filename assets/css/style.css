@@ -89,7 +89,56 @@ align-self: self-end;
     display: block;
 }
 
+.caroussel-section {
+    height: 380px;
+    margin-bottom: 20px;
+    /* border: 5px solid pink; */
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    gap: 20px;
+    padding-left: 20px;
+}
+.caroussel-card img {
+    height: 140px;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.caroussel-card {
+    height: 350px;
+    width: 300px;
+    /* border: solid blue 5px; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: 0 0 5px #bbb;
+}
 
+.caroussel-card > div {
+    height: 100%;
+    /* border: 10PX SOLID GREEN ; */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.caroussel-card button {
+    position: absolute;
+    bottom: 15px;
+    padding: 5px;
+    background-color: #f70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 30px;
+    font-size: 14px;
+}
 
 
 /*BRETAGNE*/
