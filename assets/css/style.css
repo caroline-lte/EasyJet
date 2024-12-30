@@ -45,7 +45,7 @@ header button {
 
 .beach-section img {
 width: 100%;
-height: 650px;
+height: 450px;
 object-fit: cover;
 }
 .beach-section {
@@ -56,6 +56,8 @@ object-fit: cover;
     margin-bottom: 20px;
     box-shadow: 0 0 5px #bbb;
 display: flex;
+border-radius: 10px;
+overflow: hidden;
 }
 
 .worldwide-defaut div {
@@ -86,6 +88,8 @@ align-self: self-end;
     object-position: right top;
     display: block;
 }
+
+
 
 
 /*BRETAGNE*/
