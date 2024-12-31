@@ -95,7 +95,8 @@ align-self: self-end;
     /* border: 5px solid pink; */
     display: flex;
     flex-direction: row;
-    overflow: scroll;
+    overflow-x: scroll;
+    scrollbar-width: thin;
     gap: 20px;
     padding-left: 20px;
 }
@@ -156,6 +157,7 @@ align-self: self-end;
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
+    /* border: #f60 solid 4px; */
 }
 
 .triple-imgs img {
@@ -165,6 +167,69 @@ align-self: self-end;
     width: 285px;
     object-fit: cover;
     box-shadow: 0 0  5px #bbb;
+}
+
+.triple-imgs > div {
+    position: relative;
+}
+
+.triple-imgs-absolute {
+    position: absolute;
+    top: 0px;
+    height: 220px;
+    width: 285px;
+    padding: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.triple-imgs-absolute h4 {
+    font-size: 30px;
+}
+
+.triple-imgs-absolute a {
+    font-size: 15px;
+}
+
+/* BOTTOM-CAROUSSEL */
+
+.bottom-caroussel {
+    /* border: #f60 solid 5px; */
+    margin-bottom: 50px;
+}
+
+.bottom-caroussel h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.bottom-caroussel > menu {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    gap: 20px;
+
+}
+
+.bottom-caroussel div {
+height: 145px;
+width: 145px;
+padding: 20px;
+border-radius: 10px;
+background-color: #333;
+color: white;
+flex-shrink: 0;
+box-sizing: border-box;
+font-size: 14px;
+margin-bottom: 10px;
+}
+
+.bottom-caroussel div:hover {
+    background-color: #f70;
+    cursor: pointer;
 }
 
 /* FOOTER */
