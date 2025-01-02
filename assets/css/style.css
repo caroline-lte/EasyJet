@@ -47,12 +47,103 @@ header button {
 
 .beach-section img {
 width: 100%;
-height: 450px;
+height: 690px;
 object-fit: cover;
 }
 .beach-section {
     margin-bottom: 20px;
+    position: relative;
 }
+
+.beach-absolute {
+    /* border: rgb(119, 0, 255) solid 2px; */
+    height: 450px;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+
+.beach-white-absolute {
+    /* border: palevioletred 6px solid; */
+    background-color: rgb(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+}
+
+.wrapper-white-bar {
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    font-size: 13px;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: red 3px solid ; */
+
+}
+
+.offers {
+    display: flex;
+}
+
+.offers > div {
+display: flex;
+flex: 1;
+flex-direction: column;
+gap: 10px;
+/* border: solid 4px yellow; */
+}
+
+.offers button {
+    padding: 6px 9px;
+    background-color: #f70;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 2px;
+    align-self: self-start;
+}
+
+
+.bookingmenu-wrapper {
+    /* border: 5px, solid, green; */
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    width: 280px;
+    /* border: violet 4px solid ; */
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.left-column-title {
+    font-size: 40px;
+    font-family: easyJet Headline, sans-serif;
+}
+
+.left-column > div {
+    font-size: 30px;
+}
+
+.left-column button {
+    padding: 15px 25px;
+    background-color: #f60;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 2px;
+    align-self: flex-start;
+}
+
+
 /*worldwide-defaut*/
 .worldwide-defaut {
     margin-bottom: 20px;

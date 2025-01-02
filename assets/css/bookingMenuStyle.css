@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+.booking-menu {
+    height: 460px;
+    width: 310px;
+    box-shadow: 0 0 5px #ddd ;
+    font-size: 13px;
+    padding: 12px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+
+.checkbox {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox input {
+    height: 30px;
+    width: 30px;
+}
+
+.destination {
+    border:#eee solid 1px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.destination-line {
+    width: 180px;
+    border: 1px solid #eee;
+    margin: 0 auto;
+}
+
+.destination input {
+    height: 34px;
+    border: none;
+}
+
+/* --------- */
+
+.date-picker {
+    border: 1px solid #eee;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #f70;
+    /* border: green 5px solid; */
+}
+
+.date-picker  div:nth-child(2) {
+    width: 180px;
+    border: 1px solid #eee;
+    margin: 0 auto;  
+    /* border: royalblue 3px solid ; */
+}
+
+.date-picker > div:nth-child(odd) {
+    padding: 7px;
+    display: flex;
+    gap: 8px;
+}
+
+.date-picker i {
+    font-size: 20px;
+}
+/* -------- */
+
+.quantity > div {
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter-div {
+    display: flex;
+}
+.quantity button {
+    border: none;
+    background-color: unset;
+    font-size: 20px;
+}
+
+.quantity > div  span {
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    width: 30px;
+    text-align: center;
+}
+
+.bookingmenu-wrapper {
+    display: flex;
+}
+
+.booking-menu > button {
+    color: white;
+    background-color: #f60;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.booking-menu-bottom {
+    color: #f70;
+    font-size: 13px;
+}
+
+.booking-menu-bottom  p:first-child {
+    margin-bottom: 10px;
+}
